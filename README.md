@@ -70,7 +70,7 @@
 
     grid.arrange(g1,g2,g3,g4,nrow=2,ncol=2)
 
-![](Assignment4_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+![](unnamed-chunk-5-1.png)
 
 #### 2. This question involves a dataset which gives a record of every men's singles match played in Wim-bledon in 2015. Type in the following to load the data called wim. (File available on Moodle).
 
@@ -94,7 +94,7 @@
     ggplot(data=wim)+
       geom_histogram(mapping = aes(wim$htdiff),color="black",fill="lightblue",bins=30,na.rm=TRUE) 
 
-![](Assignment4_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+![](unnamed-chunk-6-1.png)
 
 #### (b) Construct a dataset with one row per player, recording also the number of wins, ranking points,height and country of the player.Do this in the following steps:
 
@@ -248,7 +248,7 @@
     ggplot(data = resultsummary) +
       geom_point(mapping = aes(x = resultsummary$wins, y = resultsummary$points))
 
-![](Assignment4_files/figure-markdown_strict/unnamed-chunk-13-1.png)
+![](unnamed-chunk-13-1.png)
 
 #### (d) Using the dataset by\_player, write code to find the names of the tournament winner and the losing finalist. If you did not manage to correctly construct the dataset by\_player, do this some other way.
 
@@ -297,4 +297,4 @@
     topcountry$ioc <- factor(topcountry$ioc,levels = topcountry$ioc)
     ggplot(topcountry, aes(x=ioc,y=wins)) + geom_bar(stat="identity",fill=1:10)
 
-![](Assignment4_files/figure-markdown_strict/unnamed-chunk-16-1.png)
+![](unnamed-chunk-16-1.png)
