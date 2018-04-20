@@ -291,7 +291,7 @@
     ##   <chr> <dbl>
     ## 1   ESP    11
 
-#### (f) Draw a barplot showing the number of wins for the top 10 countries, preferrably in decreasing order by wins.
+#### (f)barplot showing the number of wins for the top 10 countries, preferrably in decreasing order by wins.
 
     topcountry <- head(X[order(X$wins,decreasing = TRUE),],10)
     topcountry$ioc <- factor(topcountry$ioc,levels = topcountry$ioc)
